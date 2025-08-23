@@ -28,12 +28,12 @@ const Contact = () => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
-    
+
     toast({
       title: "Message Sent!",
       description: "Thank you for reaching out. We'll get back to you soon.",
     });
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -47,14 +47,14 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      content: "acm@gmrit.edu.in",
-      action: "mailto:acm@gmrit.edu.in"
+      content: "meghanakorikana@gmail.com",
+      action: "mailto:meghanakorikana@gmail.com"
     },
     {
       icon: <Phone className="h-6 w-6" />,
-      title: "Call Us", 
-      content: "+91 XXXX XXXXXX",
-      action: "tel:+91XXXXXXXXXX"
+      title: "Call Us",
+      content: "+91 91826 56897",
+      action: "tel:+9191826 56897"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
@@ -121,7 +121,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
                     <Input
@@ -133,7 +133,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
                     <Textarea
@@ -146,7 +146,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <Button type="submit" className="w-full bg-gradient-primary hover:opacity-90" size="lg">
                     <Send className="h-4 w-4 mr-2" />
                     Send Message
@@ -215,15 +215,15 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">200+</div>
+                  <div className="text-2xl font-bold text-primary">50+</div>
                   <p className="text-sm text-muted-foreground">Active Members</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">50+</div>
+                  <div className="text-2xl font-bold text-primary">30+</div>
                   <p className="text-sm text-muted-foreground">Events Per Year</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">6</div>
+                  <div className="text-2xl font-bold text-primary">2</div>
                   <p className="text-sm text-muted-foreground">Special Interest Groups</p>
                 </div>
               </CardContent>

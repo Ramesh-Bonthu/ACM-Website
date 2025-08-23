@@ -5,64 +5,91 @@ import { Button } from '@/components/ui/button';
 const Team = () => {
   const coreTeam = [
     {
-      name: "Arjun Patel",
+      name: "J. Adithya",
       position: "Chairperson",
       year: "Final Year",
-      branch: "Computer Science Engineering",
-      email: "arjun.patel@student.gmrit.edu.in",
+      branch: "Computer Science and Engineering",
+      email: "adithya@gmrit.edu.in",
       linkedin: "linkedin.com/in/arjunpatel",
       github: "github.com/arjunpatel",
       description: "Leading the chapter with vision and dedication to advance computing education."
     },
     {
-      name: "Sneha Reddy",
+      name: "Nitish Durga",
       position: "Vice Chairperson",
-      year: "Third Year",
-      branch: "Information Technology",
-      email: "sneha.reddy@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/snehareddy",
-      github: "github.com/snehareddy",
-      description: "Supporting chapter operations and coordinating with various committees."
+      year: "Final Year",
+      branch: "Computer Science and Engineering",
+      email: "bndnitish24@gmail.com",
+      linkedin: "https://www.linkedin.com/in/nitishbytaru/",
+      github: "https://github.com/nitishbytaru",
+      description: "I’m a CS student, always learning, jumping from one framework to another, and recharging my brain by getting lost in novels."
     },
     {
-      name: "Rohit Kumar",
+      name: "B. R. Vamsi",
       position: "Secretary",
-      year: "Third Year", 
-      branch: "Computer Science Engineering",
+      year: "Final Year",
+      branch: "Computer Science and Engineering",
       email: "rohit.kumar@student.gmrit.edu.in",
       linkedin: "linkedin.com/in/rohitkumar",
       github: "github.com/rohitkumar",
       description: "Managing communications and maintaining chapter documentation."
     },
     {
-      name: "Priya Sharma",
-      position: "Treasurer",
-      year: "Second Year",
-      branch: "Information Technology",
+      name: "Manoj Kumar",
+      position: "Co-Secretary & Membership Lead",
+      year: "Final Year",
+      branch: "CSE - AI & DS",
       email: "priya.sharma@student.gmrit.edu.in",
       linkedin: "linkedin.com/in/priyasharma",
       github: "github.com/priyasharma",
       description: "Handling financial matters and budget planning for chapter activities."
     },
     {
-      name: "Kiran Venkat",
-      position: "Technical Lead",
+      name: "D. Sai Teja",
+      position: "Web Lead & Treasurer",
       year: "Final Year",
-      branch: "Computer Science Engineering",
-      email: "kiran.venkat@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/kiranvenkat",
-      github: "github.com/kiranvenkat",
-      description: "Overseeing technical workshops and coding competitions."
+      branch: "Computer Science and Engineering",
+      email: "saiteja.d.555@gmail.com",
+      linkedin: "https://www.linkedin.com/in/damarasingi-sai-teja-846305262",
+      github: "https://github.com/DSaiTeja123",
+      description: "I'm a Full Stack Developer with expertise in MERN and Django, and a proactive team player with strong problem-solving skills. I have solid programming experience in Python and C++, and hold a 2-star rating on CodeChef."
     },
     {
-      name: "Anitha Rao",
-      position: "Events Coordinator",
-      year: "Third Year",
-      branch: "Electronics & Communication",
+      name: "Shaik Sadik",
+      position: "CP Lead",
+      year: "Final Year",
+      branch: "Computer Science and Engineering",
       email: "anitha.rao@student.gmrit.edu.in",
       linkedin: "linkedin.com/in/anitharao",
       github: "github.com/anitharao",
       description: "Planning and executing chapter events and industry interactions."
+    }, {
+      name: "P. Susmitha",
+      position: "Event Manager",
+      year: "Final Year",
+      branch: "Computer Science and Engineering",
+      email: "priya.sharma@student.gmrit.edu.in",
+      linkedin: "linkedin.com/in/priyasharma",
+      github: "github.com/priyasharma",
+      description: "Handling financial matters and budget planning for chapter activities."
+    }, {
+      name: "J. Pradeep",
+      position: "Event Manager",
+      year: "Final Year",
+      branch: "CSE - AI & ML",
+      email: "priya.sharma@student.gmrit.edu.in",
+      linkedin: "linkedin.com/in/priyasharma",
+      github: "github.com/priyasharma",
+      description: "Handling financial matters and budget planning for chapter activities."
+    }, {
+      name: "M. Abhi Ram",
+      position: "Design Lead",
+      year: "Final Year",
+      branch: "Information Technology",
+      email: "priya.sharma@student.gmrit.edu.in",
+      linkedin: "linkedin.com/in/priyasharma",
+      github: "github.com/priyasharma",
+      description: "Handling financial matters and budget planning for chapter activities."
     }
   ];
 
@@ -81,7 +108,7 @@ const Team = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-16">
           {coreTeam.map((member, index) => (
             <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center pb-4">
@@ -94,12 +121,12 @@ const Team = () => {
                   <p className="text-sm text-muted-foreground">{member.year} • {member.branch}</p>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground text-center">
                   {member.description}
                 </p>
-                
+
                 {/* Contact Links */}
                 <div className="flex justify-center space-x-2">
                   <Button
@@ -112,7 +139,7 @@ const Team = () => {
                     Email
                   </Button>
                 </div>
-                
+
                 <div className="flex justify-center space-x-2">
                   <Button
                     variant="ghost"

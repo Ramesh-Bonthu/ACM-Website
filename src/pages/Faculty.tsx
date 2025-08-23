@@ -5,33 +5,33 @@ import { Button } from '@/components/ui/button';
 const Faculty = () => {
   const facultyMembers = [
     {
-      name: "Dr. Rajesh Kumar",
-      designation: "Faculty Coordinator",
-      department: "Computer Science Engineering",
+      name: "Dr. A. V. Ramana",
+      designation: "Professor & HOD",
+      department: "Computer Science and Engineering",
       qualification: "Ph.D. in Computer Science",
       specialization: "Machine Learning, Data Mining",
-      email: "rajesh.kumar@gmrit.edu.in",
+      email: "hod_cse@gmrit.edu.in",
       phone: "+91 9876543210",
       image: "/placeholder.svg"
     },
     {
-      name: "Dr. Priya Sharma",
-      designation: "Co-Faculty Coordinator", 
-      department: "Information Technology",
-      qualification: "Ph.D. in Information Technology",
+      name: "Mr. Baisakh",
+      designation: "Assistant Professor",
+      department: "Computer Science and Engineering",
+      qualification: "M. Tech in Computer Science",
       specialization: "Cybersecurity, Network Security",
-      email: "priya.sharma@gmrit.edu.in",
+      email: "baisakh@gmrit.edu.in",
       phone: "+91 9876543211",
       image: "/placeholder.svg"
     },
     {
-      name: "Prof. Suresh Reddy",
-      designation: "Faculty Advisor",
-      department: "Computer Science Engineering",
-      qualification: "M.Tech in Computer Science",
-      specialization: "Software Engineering, Web Technologies",
-      email: "suresh.reddy@gmrit.edu.in",
-      phone: "+91 9876543212",
+      name: "Ms. Y. Nagamani",
+      designation: "Assistant Professor",
+      department: "Computer Science and Engineering",
+      qualification: "M. Tech in Computer Science",
+      specialization: "Cybersecurity, Network Security",
+      email: "nagamani.y@gmrit.edu.in",
+      phone: "+91 9876543211",
       image: "/placeholder.svg"
     }
   ];
@@ -51,7 +51,7 @@ const Faculty = () => {
         </div>
 
         {/* Faculty Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {facultyMembers.map((faculty, index) => (
             <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center pb-4">
@@ -62,22 +62,22 @@ const Faculty = () => {
                 <p className="text-primary font-semibold">{faculty.designation}</p>
                 <p className="text-sm text-muted-foreground">{faculty.department}</p>
               </CardHeader>
-              
+
               <CardContent className="space-y-4">
                 <div className="bg-gradient-hero rounded-lg p-4">
                   <h4 className="font-semibold text-foreground mb-2">Qualification</h4>
                   <p className="text-sm text-muted-foreground">{faculty.qualification}</p>
                 </div>
-                
+
                 <div className="bg-gradient-hero rounded-lg p-4">
                   <h4 className="font-semibold text-foreground mb-2">Specialization</h4>
                   <p className="text-sm text-muted-foreground">{faculty.specialization}</p>
                 </div>
-                
+
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2 text-sm">
                     <Mail className="h-4 w-4 text-muted-foreground" />
-                    <a 
+                    <a
                       href={`mailto:${faculty.email}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
@@ -86,7 +86,7 @@ const Faculty = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <a 
+                    <a
                       href={`tel:${faculty.phone}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
@@ -94,9 +94,9 @@ const Faculty = () => {
                     </a>
                   </div>
                 </div>
-                
-                <Button 
-                  variant="outline" 
+
+                <Button
+                  variant="outline"
                   className="w-full"
                   onClick={() => window.location.href = `mailto:${faculty.email}`}
                 >

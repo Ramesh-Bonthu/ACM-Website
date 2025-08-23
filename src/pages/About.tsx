@@ -1,4 +1,4 @@
-import { Target, Eye, Heart } from 'lucide-react';
+import { Target, Eye, Heart, Link as LinkIcon } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const About = () => {
@@ -99,6 +99,12 @@ const About = () => {
                 <div className="bg-card rounded-lg p-4 shadow-card">
                   <h3 className="font-semibold text-foreground mb-2">Student Chapters</h3>
                   <p className="text-muted-foreground">500+ active student chapters globally</p>
+                </div>
+                <div className="bg-card rounded-lg p-4 shadow-card">
+                  <h3 className="font-semibold text-foreground mb-2">Connect </h3>
+                  <div className="flex text-muted-foreground"><LinkIcon className="h-4 w-4 mr-3" /><a href="https://www.acm.org/" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    ACM Main website
+                  </a></div>
                 </div>
               </div>
             </div>

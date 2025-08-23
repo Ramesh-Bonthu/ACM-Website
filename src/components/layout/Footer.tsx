@@ -9,7 +9,11 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">ACM</span>
+                <img
+                  src="/Logo-acm.jpg"
+                  alt="ACM Logo"
+                  className="w-8 h-8 rounded-lg object-cover"
+                />
               </div>
               <span className="font-bold text-lg">ACM GMRIT</span>
             </div>
@@ -29,11 +33,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>acm@gmrit.edu.in</span>
+                <span>meghanakorikana@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+91 XXXX XXXXXX</span>
+                <span>+91 91826 56897</span>
               </div>
             </div>
           </div>
@@ -46,10 +50,7 @@ const Footer = () => {
                 About ACM
               </a>
               <a href="/events" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Upcoming Events
-              </a>
-              <a href="/sigs" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Special Interest Groups
+                Ongoing Events
               </a>
               <a href="/contact" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Get in Touch
@@ -60,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 ACM GMRIT Student Chapter. All rights reserved.
+            © 2025 ACM GMRIT Student Chapter. All rights reserved.
           </p>
         </div>
       </div>

@@ -14,7 +14,6 @@ const Navigation = () => {
     { path: '/team', label: 'Core Team' },
     { path: '/alumni', label: 'Alumni' },
     { path: '/events', label: 'Events' },
-    { path: '/sigs', label: 'SIGs' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -26,9 +25,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">ACM</span>
-            </div>
+            <img
+              src="/Logo-acm.jpg"
+              alt="ACM Logo"
+              className="w-8 h-8 rounded-lg object-cover"
+            />
             <div className="hidden sm:block">
               <span className="font-bold text-lg text-foreground">ACM GMRIT</span>
             </div>
@@ -40,11 +41,10 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
-                  isActive(item.path)
-                    ? 'bg-accent text-accent-foreground'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
-                }`}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${isActive(item.path)
+                  ? 'bg-accent text-accent-foreground'
+                  : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
+                  }`}
               >
                 {item.label}
               </Link>
@@ -70,11 +70,10 @@ const Navigation = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                    isActive(item.path)
-                      ? 'bg-accent text-accent-foreground'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
-                  }`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${isActive(item.path)
+                    ? 'bg-accent text-accent-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
+                    }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

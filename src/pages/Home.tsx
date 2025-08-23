@@ -9,7 +9,7 @@ const Home = () => {
     {
       icon: <Users className="h-6 w-6" />,
       title: "Active Community",
-      description: "Join 200+ passionate students in computing"
+      description: "Join 50+ passionate students in computing"
     },
     {
       icon: <Calendar className="h-6 w-6" />,
@@ -33,20 +33,20 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-hero overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/50"></div>
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         ></div>
-        <div className="relative container mx-auto px-4 py-20 lg:py-32">
+        <div className="relative container mx-auto px-4 flex flex-col items-center justify-center min-h-screen text-center">
           <div className="max-w-3xl">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Welcome to <span className="bg-gradient-primary bg-clip-text text-transparent">ACM GMRIT</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              The premier student chapter of Association for Computing Machinery at GMR Institute of Technology. 
+              The premier student chapter of Association for Computing Machinery at GMR Institute of Technology.
               Advancing computing as a science and profession through learning, networking, and innovation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gradient-primary hover:opacity-90">
                 <Link to="/about">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -71,7 +71,7 @@ const Home = () => {
               Discover opportunities for growth, learning, and making lasting connections in the world of computing.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((highlight, index) => (
               <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">

@@ -6,65 +6,105 @@ import { Badge } from '@/components/ui/badge';
 const Events = () => {
   const upcomingEvents = [
     {
-      title: "AI/ML Workshop Series",
-      date: "2024-02-15",
-      time: "10:00 AM - 4:00 PM",
-      location: "Computer Lab 1",
-      description: "Hands-on workshop covering machine learning fundamentals and practical implementations.",
-      attendees: 50,
-      status: "upcoming",
-      type: "Workshop"
-    },
-    {
-      title: "Code Storm - Programming Contest",
-      date: "2024-02-22",
-      time: "2:00 PM - 6:00 PM", 
-      location: "Main Auditorium",
-      description: "Annual programming competition featuring algorithmic challenges and prizes.",
-      attendees: 100,
-      status: "upcoming",
+      title: "2nd Year Co-ordinator Selections",
+      date: "2025-08-19",
+      time: "4:00 PM - 6:00 PM",
+      location: "CSE Labs",
+      description: "Selecting 2nd year students into ACM Co-ordinators.",
+      attendees: 130,
+      status: "on going",
       type: "Competition"
-    },
-    {
-      title: "Industry Expert Talk: Cybersecurity",
-      date: "2024-03-05",
-      time: "3:00 PM - 5:00 PM",
-      location: "Seminar Hall",
-      description: "Industry expert sharing insights on current cybersecurity trends and career opportunities.",
-      attendees: 80,
-      status: "upcoming",
-      type: "Seminar"
     }
   ];
 
   const pastEvents = [
     {
-      title: "Web Development Bootcamp",
-      date: "2024-01-20",
-      time: "9:00 AM - 5:00 PM",
-      location: "Computer Lab 2",
-      description: "Comprehensive bootcamp covering HTML, CSS, JavaScript, and React fundamentals.",
-      attendees: 75,
+      title: "GreenHorn-2025",
+      date: "2025-07-31",
+      time: "2:00 pM - 5:00 PM",
+      location: "Auditorium",
+      description: "Introducing 2nd years, about ACM & ACM-W Student chapter.",
+      attendees: 200,
       status: "completed",
-      type: "Bootcamp"
+      type: "Workshop"
     },
     {
-      title: "Open Source Contribution Workshop",
-      date: "2024-01-10",
-      time: "2:00 PM - 6:00 PM",
-      location: "Conference Room",
-      description: "Learn how to contribute to open source projects and build your GitHub profile.",
+      title: "F2 : Fun & Films",
+      date: "2025-07-17",
+      time: "3:30 PM - 5:00 PM",
+      location: "CDC Seminar Hall",
+      description: "Non - Techincal event to the students, which helps in stress free and enjoyment.",
+      attendees: 130,
+      status: "completed",
+      type: "Competition"
+    },
+    {
+      title: "Technova-2025",
+      date: "2024-04-10",
+      time: "9:00 PM - 7:00 AM",
+      location: "DA Lab",
+      description: "The ACM & ACM-W Student Chapter presents TechNova, an exciting overnight hackathon where innovation meets collaboration! Solve real-world problems, showcase skills, and learn from experts in a high-energy setting!",
+      attendees: 200,
+      status: "completed",
+      type: "Hackthons"
+    },
+    {
+      title: "SIG on Web Development.",
+      date: "2025-03-12",
+      time: "3:30 PM - 5:00 PM",
+      location: "Deep Learning Lab",
+      description: "Dive into the world of backend development with Django and Flask. This 3-day hands-on session will equip you with the skills to build powerful and dynamic web application.",
+      attendees: 80,
+      status: "completed",
+      type: "Workshops"
+    },
+    {
+      title: "BB Challenge : Brain &Bug  ",
+      date: "2025-01-07",
+      time: "3:00 PM - 5:00 PM",
+      location: "CSE Labs",
+      description: "Techincal event to improve their in programming lanaguages and coding.",
+      attendees: 120,
+      status: "completed",
+      type: "Competition"
+    },
+    {
+      title: "Code & Conquer: The Ultimate Treasure Hunt Challenge!",
+      date: "2024-11-06",
+      time: "3:00 pM - 5:00 PM",
+      location: " CA Lab     ",
+      description: "Whether you’re a seasoned coder or just starting your programming journey, this event promises a fun and competitive environment to sharpen your skills, challenge your limits, and learn along the way.",
+      attendees: 75,
+      status: "completed",
+      type: "Competition"
+    },
+    {
+      title: "Design Dash: Canva Skills to Create in a Flash ",
+      date: "2024-10-23",
+      time: "3:00 PM - 5:00 PM",
+      location: "Coding Lab",
+      description: " Exclusively for the 1st year students to improve their skills in Canva.",
       attendees: 60,
       status: "completed",
       type: "Workshop"
     },
     {
-      title: "Tech Quiz Championship",
-      date: "2023-12-15",
-      time: "4:00 PM - 7:00 PM",
-      location: "Main Auditorium",
-      description: "Annual tech quiz competition testing knowledge across various computing domains.",
+      title: "MIND MAZE ",
+      date: "2024-08-17",
+      time: "3:00 PM - 5:00 PM",
+      location: "CSE Seminar Hall",
+      description: "Non - Techincal event to the students, which helps in stress free and enjoyment.",
       attendees: 120,
+      status: "completed",
+      type: "Competition"
+    },
+    {
+      title: "CINEBUZZ",
+      date: "2024-08-24",
+      time: "3:30 PM - 5:00 PM",
+      location: "Deep Learning Lab",
+      description: "Non - Techincal event to the students, which helps in stress free and enjoyment.",
+      attendees: 170,
       status: "completed",
       type: "Competition"
     }
@@ -74,32 +114,32 @@ const Events = () => {
     {
       name: "Workshops",
       description: "Hands-on learning sessions on latest technologies",
-      count: 12
+      count: 3
     },
     {
       name: "Seminars",
       description: "Industry expert talks and academic presentations",
-      count: 8
+      count: 2
     },
     {
       name: "Competitions",
       description: "Programming contests and tech challenges",
-      count: 6
+      count: 12
     },
     {
       name: "Hackathons",
       description: "24-48 hour coding marathons for innovative solutions",
-      count: 3
+      count: 2
     }
   ];
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      weekday: 'long', 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
+    return date.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     });
   };
 
@@ -163,10 +203,10 @@ const Events = () => {
                   </div>
                   <CardTitle className="text-lg text-foreground">{event.title}</CardTitle>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-4">
                   <p className="text-sm text-muted-foreground">{event.description}</p>
-                  
+
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                       <Calendar className="h-4 w-4" />
@@ -185,7 +225,7 @@ const Events = () => {
                       <span>{event.attendees} expected attendees</span>
                     </div>
                   </div>
-                  
+
                   <Button className="w-full bg-gradient-primary hover:opacity-90">
                     Register Now <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -214,10 +254,10 @@ const Events = () => {
                   </div>
                   <CardTitle className="text-lg text-foreground">{event.title}</CardTitle>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-4">
                   <p className="text-sm text-muted-foreground">{event.description}</p>
-                  
+
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                       <Calendar className="h-4 w-4" />
@@ -248,9 +288,6 @@ const Events = () => {
               <a href="/contact">
                 Subscribe to Updates <ArrowRight className="ml-2 h-4 w-4" />
               </a>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <a href="/sigs">Explore SIGs</a>
             </Button>
           </div>
         </div>
