@@ -70,13 +70,13 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      content: "meghanakorikana@gmail.com",
+      content: "adithyajalluri2005@gmail.com",
       action: "mailto:meghanakorikana@gmail.com"
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
-      content: "+91 91826 56897",
+      content: "+91 82472 73204",
       action: "tel:+9191826 56897"
     },
     {

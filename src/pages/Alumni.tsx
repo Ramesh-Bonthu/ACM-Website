@@ -5,59 +5,28 @@ import { Button } from '@/components/ui/button';
 const Alumni = () => {
   const alumniMembers = [
     {
-      name: "Dr. Vikram Singh",
-      batch: "2018-2022",
+      name: "Akram Shaik",
+      batch: "2021-2025",
       currentRole: "Software Engineer",
-      company: "Google",
-      location: "Bangalore, India",
-      achievement: "Led the development of several key features in Google Search",
-      linkedin: "linkedin.com/in/vikramsingh"
+      company: "TCS",
+      linkedin: "https://www.linkedin.com/in/akramshaik22/"
     },
     {
-      name: "Meera Patel",
-      batch: "2017-2021",
-      currentRole: "Data Scientist", 
-      company: "Microsoft",
+      name: "Bhargav Ratnala",
+      batch: "2021-2025",
+      currentRole: "Software engineer",
+      company: "TCS",
+      location: "Chennai, India",
+      linkedin: "https://www.linkedin.com/in/bhargavratnala"
+    },
+    {
+      name: "Vandrangi Navya Sri",
+      batch: "2021-2025",
+      currentRole: "Associate",
+      company: "Modak Analytics",
       location: "Hyderabad, India",
-      achievement: "Published 5 research papers in machine learning conferences",
-      linkedin: "linkedin.com/in/meerapatel"
+      linkedin: "https://www.linkedin.com/in/navyasri-vandrangi"
     },
-    {
-      name: "Ravi Kumar",
-      batch: "2019-2023",
-      currentRole: "Full Stack Developer",
-      company: "Amazon",
-      location: "Seattle, USA",
-      achievement: "Developed scalable e-commerce solutions serving millions of users",
-      linkedin: "linkedin.com/in/ravikumar"
-    },
-    {
-      name: "Sahana Reddy",
-      batch: "2016-2020",
-      currentRole: "Cybersecurity Analyst",
-      company: "IBM",
-      location: "Pune, India",
-      achievement: "Specialized in threat detection and vulnerability assessment",
-      linkedin: "linkedin.com/in/sahanareddy"
-    },
-    {
-      name: "Anil Sharma",
-      batch: "2015-2019", 
-      currentRole: "Product Manager",
-      company: "Meta",
-      location: "California, USA",
-      achievement: "Led product development for social media platforms",
-      linkedin: "linkedin.com/in/anilsharma"
-    },
-    {
-      name: "Deepika Rao",
-      batch: "2018-2022",
-      currentRole: "AI Research Engineer",
-      company: "OpenAI",
-      location: "San Francisco, USA",
-      achievement: "Contributing to cutting-edge AI research and development",
-      linkedin: "linkedin.com/in/deepikarao"
-    }
   ];
 
   const achievements = [
@@ -65,11 +34,6 @@ const Alumni = () => {
       title: "Industry Leaders",
       description: "Our alumni work at top tech companies worldwide",
       count: "50+"
-    },
-    {
-      title: "Successful Startups",
-      description: "Alumni who founded their own technology companies",
-      count: "15+"
     },
     {
       title: "Advanced Degrees",
@@ -98,7 +62,7 @@ const Alumni = () => {
         </div>
 
         {/* Alumni Achievements */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {achievements.map((achievement, index) => (
             <Card key={index} className="shadow-card hover:shadow-card-hover transition-all duration-300 text-center">
               <CardContent className="p-6">
@@ -125,7 +89,7 @@ const Alumni = () => {
                   <h3 className="text-lg font-bold text-foreground">{alumni.name}</h3>
                   <p className="text-sm text-muted-foreground">{alumni.batch}</p>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-4">
                   <div className="bg-gradient-hero rounded-lg p-4">
                     <div className="flex items-center space-x-2 mb-2">
@@ -138,14 +102,9 @@ const Alumni = () => {
                       <span className="text-sm text-muted-foreground">{alumni.location}</span>
                     </div>
                   </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Achievement</h4>
-                    <p className="text-sm text-muted-foreground">{alumni.achievement}</p>
-                  </div>
-                  
-                  <Button 
-                    variant="outline" 
+
+                  <Button
+                    variant="outline"
                     className="w-full"
                     onClick={() => window.open(`https://${alumni.linkedin}`, '_blank')}
                   >
@@ -168,7 +127,7 @@ const Alumni = () => {
               Stay connected with your fellow ACM GMRIT alumni and continue to be part of our growing community.
               Share your experiences, mentor current students, and contribute to the chapter's growth.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-card rounded-lg p-6 shadow-card">
                 <GraduationCap className="h-8 w-8 text-primary mx-auto mb-4" />
@@ -192,7 +151,7 @@ const Alumni = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gradient-primary hover:opacity-90">
                 <a href="/contact">

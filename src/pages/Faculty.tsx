@@ -10,7 +10,7 @@ const Faculty = () => {
       department: "Computer Science and Engineering",
       qualification: "Ph.D. in Computer Science",
       email: "hod_cse@gmrit.edu.in",
-      phone: "+91 9876543210",
+      phone: "+91 9440539954",
       image: "/placeholder.svg"
     },
     {

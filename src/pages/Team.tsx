@@ -9,10 +9,10 @@ const Team = () => {
       position: "Chairperson",
       year: "Final Year",
       branch: "Computer Science and Engineering",
-      email: "adithya@gmrit.edu.in",
-      linkedin: "linkedin.com/in/arjunpatel",
-      github: "github.com/arjunpatel",
-      description: "Leading the chapter with vision and dedication to advance computing education."
+      email: "adithyajalluri2005@gmail.com",
+      linkedin: "https://www.linkedin.com/in/adithya-jalluri-748b69279/",
+      github: "https://github.com/adithyajalluri2005",
+      description: "As Chairperson of the ACM Student Chapter, I strive to foster innovation, collaboration, and learning among students. Our chapter serves as a platform to explore technology, share knowledge, and grow as future leaders in computing."
     },
     {
       name: "Nitish Durga",
@@ -39,10 +39,10 @@ const Team = () => {
       position: "Co-Secretary & Membership Lead",
       year: "Final Year",
       branch: "CSE - AI & DS",
-      email: "priya.sharma@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/priyasharma",
-      github: "github.com/priyasharma",
-      description: "Handling financial matters and budget planning for chapter activities."
+      email: "manojkumer844@gmail.com",
+      linkedin: "https://www.linkedin.com/in/manoj-kumar-goudu-834285254/",
+      github: "https://github.com/manojkumarGgithub",
+      description: "Handling financial matters and budget planning for chapter activities.Be happy and Stay healthy"
     },
     {
       name: "D. Sai Teja",
@@ -86,10 +86,10 @@ const Team = () => {
       position: "Design Lead",
       year: "Final Year",
       branch: "Information Technology",
-      email: "priya.sharma@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/priyasharma",
-      github: "github.com/priyasharma",
-      description: "Handling financial matters and budget planning for chapter activities."
+      email: "abhirammeesala12@gmail.com",
+      linkedin: "www.linkedin.com/in/abhirammeesala7",
+      github: "https://github.com/Abhiramarya7",
+      description: "-> Engineering ideas, designing possibilities."
     }
   ];
 
