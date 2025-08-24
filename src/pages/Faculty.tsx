@@ -9,7 +9,6 @@ const Faculty = () => {
       designation: "Professor & HOD",
       department: "Computer Science and Engineering",
       qualification: "Ph.D. in Computer Science",
-      specialization: "Machine Learning, Data Mining",
       email: "hod_cse@gmrit.edu.in",
       phone: "+91 9876543210",
       image: "/placeholder.svg"
@@ -19,9 +18,8 @@ const Faculty = () => {
       designation: "Assistant Professor",
       department: "Computer Science and Engineering",
       qualification: "M. Tech in Computer Science",
-      specialization: "Cybersecurity, Network Security",
       email: "baisakh@gmrit.edu.in",
-      phone: "+91 9876543211",
+      phone: "+91 9438014332",
       image: "/placeholder.svg"
     },
     {
@@ -29,9 +27,8 @@ const Faculty = () => {
       designation: "Assistant Professor",
       department: "Computer Science and Engineering",
       qualification: "M. Tech in Computer Science",
-      specialization: "Cybersecurity, Network Security",
       email: "nagamani.y@gmrit.edu.in",
-      phone: "+91 9876543211",
+      phone: "+91 6302394387",
       image: "/placeholder.svg"
     }
   ];
@@ -67,11 +64,6 @@ const Faculty = () => {
                 <div className="bg-gradient-hero rounded-lg p-4">
                   <h4 className="font-semibold text-foreground mb-2">Qualification</h4>
                   <p className="text-sm text-muted-foreground">{faculty.qualification}</p>
-                </div>
-
-                <div className="bg-gradient-hero rounded-lg p-4">
-                  <h4 className="font-semibold text-foreground mb-2">Specialization</h4>
-                  <p className="text-sm text-muted-foreground">{faculty.specialization}</p>
                 </div>
 
                 <div className="space-y-2">

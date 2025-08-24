@@ -29,10 +29,10 @@ const Team = () => {
       position: "Secretary",
       year: "Final Year",
       branch: "Computer Science and Engineering",
-      email: "rohit.kumar@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/rohitkumar",
-      github: "github.com/rohitkumar",
-      description: "Managing communications and maintaining chapter documentation."
+      email: "mohanavamsi963@gmail.com",
+      linkedin: "https://www.linkedin.com/in/bankupalli-ramamohana-vamsi-ab69aa289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "https://github.com/vamsi8041",
+      description: "Enthusiastic Computer Science student with strong skills in Python, Machine Learning, and Web Development."
     },
     {
       name: "Manoj Kumar",
@@ -59,28 +59,28 @@ const Team = () => {
       position: "CP Lead",
       year: "Final Year",
       branch: "Computer Science and Engineering",
-      email: "anitha.rao@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/anitharao",
-      github: "github.com/anitharao",
-      description: "Planning and executing chapter events and industry interactions."
+      email: "22341a05g2@gmrit.edu.in",
+      linkedin: "https://www.linkedin.com/in/sadik-shaik-982ba0166?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "https://github.com/sadik99493",
+      description: "Passionate about coding and problem-solving, leading competitive programming at ACM"
     }, {
       name: "P. Susmitha",
-      position: "Event Manager",
+      position: "Web lead & Event Manager",
       year: "Final Year",
       branch: "Computer Science and Engineering",
-      email: "priya.sharma@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/priyasharma",
-      github: "github.com/priyasharma",
-      description: "Handling financial matters and budget planning for chapter activities."
+      email: "22341A05E3@gmrit.edu.in",
+      linkedin: "https://www.linkedin.com/in/susmitha-pottipogu-b7256428b",
+      github: "https://github.com/susmitha712",
+      description: "Full-stack developer skilled in MERN, PHP, and MySQL with hands-on project experience. 4⭐ Python coder on HackerRank and problem-solver with 500+ challenges solved on CodeChef."
     }, {
       name: "J. Pradeep",
-      position: "Event Manager",
+      position: "Multimedia lead ",
       year: "Final Year",
       branch: "CSE - AI & ML",
-      email: "priya.sharma@student.gmrit.edu.in",
-      linkedin: "linkedin.com/in/priyasharma",
-      github: "github.com/priyasharma",
-      description: "Handling financial matters and budget planning for chapter activities."
+      email: "jamipradeep2003@gmail.com",
+      linkedin: "https://www.linkedin.com/in/jami-pradeep-95b68036a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "https://github.com/PradeepJami18",
+      description: "The more you try, the more you learn, so just keep going."
     }, {
       name: "M. Abhi Ram",
       position: "Design Lead",

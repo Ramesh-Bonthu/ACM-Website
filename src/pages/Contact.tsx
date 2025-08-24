@@ -24,8 +24,31 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyYN6T4UnypQEuIh_CE7tip3dKOGW5VoODM7sEmlXDUZEudoe7kXnq-vzlTx6JoXmPNLg/exec", {
+        method: "POST",
+        mode: "no-cors", // Required for Apps Script
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      toast({
+        title: "Message Sent!",
+        description: "Your data was added to Google Sheets successfully.",
+      });
+
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
+    }
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
 
@@ -65,8 +88,8 @@ const Contact = () => {
   ];
 
   const officeHours = [
-    { day: "Monday - Friday", time: "9:00 AM - 6:00 PM" },
-    { day: "Saturday", time: "10:00 AM - 4:00 PM" },
+    { day: "Monday - Friday", time: "9:00 AM - 5:00 PM" },
+    { day: "Saturday", time: "10:00 AM - 1:00 PM" },
     { day: "Sunday", time: "Closed" }
   ];
 
