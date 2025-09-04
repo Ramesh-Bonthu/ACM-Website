@@ -87,12 +87,6 @@ const Contact = () => {
     }
   ];
 
-  const officeHours = [
-    { day: "Monday - Friday", time: "9:00 AM - 5:00 PM" },
-    { day: "Saturday", time: "10:00 AM - 1:00 PM" },
-    { day: "Sunday", time: "Closed" }
-  ];
-
   return (
     <div className="min-h-screen py-16 lg:py-24">
       <div className="container mx-auto px-4">
@@ -205,24 +199,6 @@ const Contact = () => {
                         <p className="text-sm text-muted-foreground">{info.content}</p>
                       )}
                     </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            {/* Office Hours */}
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="text-xl text-foreground flex items-center">
-                  <Clock className="h-5 w-5 mr-2" />
-                  Office Hours
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {officeHours.map((schedule, index) => (
-                  <div key={index} className="flex justify-between items-center">
-                    <span className="text-sm text-foreground font-medium">{schedule.day}</span>
-                    <span className="text-sm text-muted-foreground">{schedule.time}</span>
                   </div>
                 ))}
               </CardContent>

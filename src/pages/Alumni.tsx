@@ -9,6 +9,7 @@ const Alumni = () => {
       batch: "2021-2025",
       currentRole: "Software Engineer",
       company: "TCS",
+      location: "Chennai, India",
       linkedin: "https://www.linkedin.com/in/akramshaik22/"
     },
     {
